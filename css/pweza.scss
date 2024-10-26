@@ -1,0 +1,91 @@
+//COLORS
+$colorPrimary : #FF6D1F;
+$colorWhite : #ffffff;
+$colorGray : #A9A9A9;
+//PRODUCT LOOP
+.pweza-product-container{
+    position: relative;
+    width: 100%;
+    .pweza-product{
+        position: relative;
+        width: 100%;
+        border: 1px solid red;
+        .pweza-product-header-container{
+            position: relative;
+            width: 100%;
+            height: 5cm;
+            background: yellow;
+            overflow: hidden;
+            .pweza-product-badge-container{
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                .pweza-product-badge{
+                    position: relative;
+                    width: 100%;
+                    height: 25px;
+                    background: red;
+                    transform:translate(-30%,85%) rotate(-45deg);
+                    p{
+                        position: absolute;
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 0.6em;
+                        font-weight: 900;
+                        margin: 0;
+                        padding: 0;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+                .out-of-stock{
+                    p{
+                        font-size: 0.5em !important;
+                    }
+                }
+                .on-backorder{
+                    p{
+                        font-size: 0.5em !important;
+                    }
+                }
+            }
+            .pweza-product-wishlist-container{
+                position: absolute;
+                align-items: center;
+                top: 5px;
+                right: 5px;
+                width: 1cm;
+                height: 1cm;
+                border-radius: 100px;
+                overflow: hidden;
+                background: white;
+                .pweza-product-wishlist{
+                    position: relative;
+                    margin-top: -2px;
+                    a{
+                        padding-left: 10px;
+                        .fa-heart{
+                            color: $colorPrimary !important;
+                        }
+                        .fa-heart-o{
+                            color: $colorGray !important;
+                        }
+                    }
+                    a:visited{
+                        color: unset;
+                    }
+                    a:deleted{
+                        color: unset;
+                    }
+                    .feedback{
+                        content: "";
+                    }
+                    .a-heart{
+                        color: $colorPrimary !important;
+                    }
+                }
+            }
+        }
+    }
+}

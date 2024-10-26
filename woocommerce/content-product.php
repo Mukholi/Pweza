@@ -25,6 +25,52 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class( '', $product ); ?>>
+	<div class="pweza-product-container">
+		<div class="pweza-product">
+			<div class="pweza-product-header-container">
+				<?php
+
+					if ($product->is_on_backorder()) {
+						echo'<div class="pweza-product-badge-container">
+							<div class="pweza-product-badge on-backorder">
+								<p>On Backorder</p>
+							</div>
+						</div>';
+					}
+					else if ( ! $product->is_in_stock() ) {
+						echo'<div class="pweza-product-badge-container">
+							<div class="pweza-product-badge out-of-stock">
+								<p>Out of Stock</p>
+							</div>
+						</div>';
+					}
+					else if ( $product->is_on_sale() ) {
+						echo'<div class="pweza-product-badge-container">
+							<div class="pweza-product-badge sale">
+								<p>Sale</p>
+							</div>
+						</div>';
+					}
+					else {}
+				
+				?>
+
+				<div class="pweza-product-wishlist-container">
+					<div class="pweza-product-wishlist">
+						<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
+					</div>
+				</div>
+				<div class="pweza-product-header">
+					
+				</div>
+			</div>
+			<div class="pweza-product-body-container">
+				<div class="pweza-product-body">
+					<a class="pweza-product-body-link" href="#"><a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
