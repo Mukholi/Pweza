@@ -10,6 +10,40 @@ $colorGray : #A9A9A9;
 
 //VALUES
 $cardBorderRadius : 25px;
+
+//PRODUCT ORDERINGD
+.woocommerce-ordering{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 2px solid $colorGray;
+    border-radius: 1000px;
+    padding: 5px 10px;
+    .orderby{
+        background: unset;
+        border: unset;
+        outline: none;
+        width: auto;
+        color: $colorGray;
+        margin-right: 5px;
+        font-size: 0.7em;
+        margin-bottom: 4px;
+    }
+}
+
+.woocommerce-ordering::before{
+    content: "Set to: ";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+
+//woocommerce-result-count
+.woocommerce-result-count{
+    font-size: 0.8em;
+    margin-bottom: 1cm;
+}
+
 //PRODUCT LOOP
 .pweza-product-container{
     position: relative;
@@ -50,6 +84,9 @@ $cardBorderRadius : 25px;
                         top: 50%;
                         transform: translate(-50%,-50%);
                     }
+                }
+                .sale{
+                    background: $colorPrimary;
                 }
                 .out-of-stock{
                     p{
@@ -191,6 +228,33 @@ $cardBorderRadius : 25px;
                         color: $colorGray !important;
                     }
                 }
+            }
+        }
+    }
+}
+
+//PAGNIATION
+.woocommerce-pagination{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .page-numbers{
+        position: relative;
+        display: flex;
+        list-style-type: unset;
+        padding: unset;
+        margin: unset;
+        margin: 0 auto;
+        li{
+            display: flex;
+            width: 1cm;
+            height: 1cm;
+            .current{
+                color: $colorPrimary;
+            }
+            a{
+                color: $colorGray;
             }
         }
     }

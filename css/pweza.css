@@ -2,6 +2,37 @@ body {
   background: #f7f7f7;
 }
 
+.woocommerce-ordering {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: 2px solid #A9A9A9;
+  border-radius: 1000px;
+  padding: 5px 10px;
+}
+.woocommerce-ordering .orderby {
+  background: unset;
+  border: unset;
+  outline: none;
+  width: auto;
+  color: #A9A9A9;
+  margin-right: 5px;
+  font-size: 0.7em;
+  margin-bottom: 4px;
+}
+
+.woocommerce-ordering::before {
+  content: "Set to: ";
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.7em;
+}
+
+.woocommerce-result-count {
+  font-size: 0.8em;
+  margin-bottom: 1cm;
+}
+
 .pweza-product-container {
   position: relative;
   width: 100%;
@@ -45,6 +76,9 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .sale {
+  background: #FF6D1F;
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .out-of-stock p {
   font-size: 0.6em !important;
@@ -179,4 +213,30 @@ body {
 .pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-add-to-cart .added_to_cart {
   border: 0px;
   color: #A9A9A9 !important;
+}
+
+.woocommerce-pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.woocommerce-pagination .page-numbers {
+  position: relative;
+  display: flex;
+  list-style-type: unset;
+  padding: unset;
+  margin: unset;
+  margin: 0 auto;
+}
+.woocommerce-pagination .page-numbers li {
+  display: flex;
+  width: 1cm;
+  height: 1cm;
+}
+.woocommerce-pagination .page-numbers li .current {
+  color: #FF6D1F;
+}
+.woocommerce-pagination .page-numbers li a {
+  color: #A9A9A9;
 }/*# sourceMappingURL=pweza.css.map */
