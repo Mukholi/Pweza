@@ -1,7 +1,15 @@
+//GLOBAL
+body{
+    background: #f7f7f7;
+}
+
 //COLORS
 $colorPrimary : #FF6D1F;
 $colorWhite : #ffffff;
 $colorGray : #A9A9A9;
+
+//VALUES
+$cardBorderRadius : 25px;
 //PRODUCT LOOP
 .pweza-product-container{
     position: relative;
@@ -9,13 +17,15 @@ $colorGray : #A9A9A9;
     .pweza-product{
         position: relative;
         width: 100%;
-        border: 1px solid red;
+        border-radius: $cardBorderRadius;
+        background: white;
         .pweza-product-header-container{
             position: relative;
             width: 100%;
-            height: 5cm;
-            background: yellow;
+            height: 6cm;
             overflow: hidden;
+            border-top-left-radius: $cardBorderRadius;
+            border-top-right-radius: $cardBorderRadius;
             .pweza-product-badge-container{
                 position: absolute;
                 left: 0px;
@@ -23,14 +33,16 @@ $colorGray : #A9A9A9;
                 .pweza-product-badge{
                     position: relative;
                     width: 100%;
-                    height: 25px;
+                    height: 30px;
                     background: red;
-                    transform:translate(-30%,85%) rotate(-45deg);
+                    transform:translate(-38%,45%) rotate(-40deg);
                     p{
                         position: absolute;
                         color: white;
                         text-transform: uppercase;
-                        font-size: 0.6em;
+                        text-align: center;
+                        font-size: 0.7em;
+                        line-height: 1em;
                         font-weight: 900;
                         margin: 0;
                         padding: 0;
@@ -41,30 +53,35 @@ $colorGray : #A9A9A9;
                 }
                 .out-of-stock{
                     p{
-                        font-size: 0.5em !important;
+                        font-size: 0.6em !important;
                     }
                 }
                 .on-backorder{
                     p{
-                        font-size: 0.5em !important;
+                        font-size: 0.6em !important;
                     }
                 }
             }
+
+        }
+        .pweza-product-body-container{
+            position: relative;
+            width: 100%;
             .pweza-product-wishlist-container{
                 position: absolute;
                 align-items: center;
-                top: 5px;
-                right: 5px;
+                top: -5.7cm;
+                right: 10px;
                 width: 1cm;
                 height: 1cm;
                 border-radius: 100px;
                 overflow: hidden;
-                background: white;
+                //background: white;
                 .pweza-product-wishlist{
                     position: relative;
                     margin-top: -2px;
                     a{
-                        padding-left: 10px;
+                        padding-left: 11px;
                         .fa-heart{
                             color: $colorPrimary !important;
                         }
@@ -83,6 +100,95 @@ $colorGray : #A9A9A9;
                     }
                     .a-heart{
                         color: $colorPrimary !important;
+                    }
+                }
+            }
+            .pweza-product-body{
+                position: relative;
+                .pweza-product-link{
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    outline: unset;
+                    color: unset;
+                    padding:0 25px;
+                    padding-top: 20px;
+                }
+                .pweza-product-rating{
+                    position: relative;
+                    display: flex;
+                    .pweza-product-rating-stars{
+                        position: relative;
+                        display: flex;
+                        .pweza-product-rating-star{
+                            width: 13px;
+                            margin-right: 2px;
+                        }
+                    }
+                    .pweza-product-rating-numbers{
+                        position: relative;
+                        display: flex;
+                        p{
+                            margin: unset;
+                            padding: unset;
+                            font-size: 0.8em;
+                            margin-left: 5px;
+                            color: $colorGray;
+                        }
+                    }
+                }
+                .pweza-product-name{
+                    font-size: 1.1em;
+                    font-weight: 800;
+                    margin: unset;
+                    padding: unset;
+                    color: black;
+                }
+                .pweza-product-prices{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 2px;
+                    p{
+                        white-space: nowrap;
+                        padding: unset;
+                        margin: unset;
+                    }
+                    .pweza-product-price-full{
+                        font-weight: 900;
+                        font-size: 0.85em;
+                        margin-right: 1em;
+                        color: $colorPrimary;
+                    }
+                    .pweza-product-price-slash{
+                        font-size: 0.85em;
+                        color: $colorGray;
+                        text-decoration: line-through;
+                    }
+                }
+                .pweza-product-add-to-cart{
+                    position: relative;
+                    padding: 0 25px;
+                    margin-top: 10px;
+                    padding-bottom: 30px;
+                    a{
+                        display: block;
+                        position: relative;
+                        align-items: center;
+                        width: 100%;
+                        height: 1cm;
+                        border: 1.5px solid $colorPrimary;
+                        padding: 0;
+                        padding-top: 10px;
+                        color: $colorPrimary;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 0.7em;
+                        font-weight: 900;
+                    }
+                    .added_to_cart{
+                        border: 0px;
+                        color: $colorGray !important;
                     }
                 }
             }

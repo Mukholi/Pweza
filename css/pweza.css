@@ -1,3 +1,7 @@
+body {
+  background: #f7f7f7;
+}
+
 .pweza-product-container {
   position: relative;
   width: 100%;
@@ -5,14 +9,16 @@
 .pweza-product-container .pweza-product {
   position: relative;
   width: 100%;
-  border: 1px solid red;
+  border-radius: 25px;
+  background: white;
 }
 .pweza-product-container .pweza-product .pweza-product-header-container {
   position: relative;
   width: 100%;
-  height: 5cm;
-  background: yellow;
+  height: 6cm;
   overflow: hidden;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container {
   position: absolute;
@@ -22,15 +28,17 @@
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .pweza-product-badge {
   position: relative;
   width: 100%;
-  height: 25px;
+  height: 30px;
   background: red;
-  transform: translate(-30%, 85%) rotate(-45deg);
+  transform: translate(-38%, 45%) rotate(-40deg);
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .pweza-product-badge p {
   position: absolute;
   color: white;
   text-transform: uppercase;
-  font-size: 0.6em;
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 1em;
   font-weight: 900;
   margin: 0;
   padding: 0;
@@ -39,44 +47,136 @@
   transform: translate(-50%, -50%);
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .out-of-stock p {
-  font-size: 0.5em !important;
+  font-size: 0.6em !important;
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .on-backorder p {
-  font-size: 0.5em !important;
+  font-size: 0.6em !important;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container {
+.pweza-product-container .pweza-product .pweza-product-body-container {
+  position: relative;
+  width: 100%;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container {
   position: absolute;
   align-items: center;
-  top: 5px;
-  right: 5px;
+  top: -5.7cm;
+  right: 10px;
   width: 1cm;
   height: 1cm;
   border-radius: 100px;
   overflow: hidden;
-  background: white;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist {
   position: relative;
   margin-top: -2px;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist a {
-  padding-left: 10px;
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist a {
+  padding-left: 11px;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist a .fa-heart {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist a .fa-heart {
   color: #FF6D1F !important;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist a .fa-heart-o {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist a .fa-heart-o {
   color: #A9A9A9 !important;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist a:visited {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist a:visited {
   color: unset;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist a:deleted {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist a:deleted {
   color: unset;
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist .feedback {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist .feedback {
   content: "";
 }
-.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-wishlist-container .pweza-product-wishlist .a-heart {
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container .pweza-product-wishlist .a-heart {
   color: #FF6D1F !important;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body {
+  position: relative;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  outline: unset;
+  color: unset;
+  padding: 0 25px;
+  padding-top: 20px;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-rating {
+  position: relative;
+  display: flex;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-rating .pweza-product-rating-stars {
+  position: relative;
+  display: flex;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-rating .pweza-product-rating-stars .pweza-product-rating-star {
+  width: 13px;
+  margin-right: 2px;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-rating .pweza-product-rating-numbers {
+  position: relative;
+  display: flex;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-rating .pweza-product-rating-numbers p {
+  margin: unset;
+  padding: unset;
+  font-size: 0.8em;
+  margin-left: 5px;
+  color: #A9A9A9;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-name {
+  font-size: 1.1em;
+  font-weight: 800;
+  margin: unset;
+  padding: unset;
+  color: black;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-prices {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-prices p {
+  white-space: nowrap;
+  padding: unset;
+  margin: unset;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-prices .pweza-product-price-full {
+  font-weight: 900;
+  font-size: 0.85em;
+  margin-right: 1em;
+  color: #FF6D1F;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-prices .pweza-product-price-slash {
+  font-size: 0.85em;
+  color: #A9A9A9;
+  text-decoration: line-through;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-add-to-cart {
+  position: relative;
+  padding: 0 25px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-add-to-cart a {
+  display: block;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 1cm;
+  border: 1.5px solid #FF6D1F;
+  padding: 0;
+  padding-top: 10px;
+  color: #FF6D1F;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 900;
+}
+.pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-body .pweza-product-add-to-cart .added_to_cart {
+  border: 0px;
+  color: #A9A9A9 !important;
 }/*# sourceMappingURL=pweza.css.map */
