@@ -186,3 +186,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+//Custom Menu
+function register_custom_menu() {
+    register_nav_menus(
+        array(
+            'header-menu-left' => __( 'Header Menu Left' )
+		),
+    );
+    register_nav_menus(
+        array(
+            'header-menu-right' => __( 'Header Menu Right' )
+		),
+    );
+}
+add_action( 'init', 'register_custom_menu' );

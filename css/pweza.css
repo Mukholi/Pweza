@@ -2,6 +2,27 @@ body {
   background: #f7f7f7;
 }
 
+.site-header {
+  position: relative;
+  width: 100%;
+  background: #FF6D1F;
+}
+.site-header .header-message-container {
+  position: relative;
+  width: 100%;
+  height: 1cm;
+  background: rgba(0, 0, 0, 0.2);
+}
+.site-header .navigation-container {
+  position: relative;
+  width: 100%;
+}
+.site-header .navigation-container .navigation-desktop {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
 .woocommerce-ordering {
   position: absolute;
   right: 0px;
@@ -55,6 +76,7 @@ body {
   position: absolute;
   left: 0px;
   width: 100%;
+  z-index: 2;
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .pweza-product-badge {
   position: relative;
@@ -85,6 +107,26 @@ body {
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .on-backorder p {
   font-size: 0.6em !important;
+}
+.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header .pweza-product-header-link {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header .pweza-product-header-link .pweza-product-image-gradient {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgb(0, 0, 0), #FFFFFF 100%);
+  mix-blend-mode: screen;
 }
 .pweza-product-container .pweza-product .pweza-product-body-container {
   position: relative;
@@ -230,13 +272,23 @@ body {
   margin: 0 auto;
 }
 .woocommerce-pagination .page-numbers li {
+  position: relative;
   display: flex;
+  align-items: center;
   width: 1cm;
   height: 1cm;
 }
 .woocommerce-pagination .page-numbers li .current {
   color: #FF6D1F;
+  cursor: default;
 }
 .woocommerce-pagination .page-numbers li a {
+  position: relative;
+  display: block;
+  margin: auto;
   color: #A9A9A9;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  padding-top: 5px;
 }/*# sourceMappingURL=pweza.css.map */

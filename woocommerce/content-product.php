@@ -55,11 +55,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 				?>
 				<div class="pweza-product-header">
 					<a class="pweza-product-header-link" href="<?php echo $product->get_permalink(); ?>">
+						<div class="pweza-product-image-gradient"></div>
 						<?php
 							$image_id = $product->get_image_id();
 							$image_url = wp_get_attachment_image_url( $image_id, 'full');
 							echo '<img class="pweza-product-image" src="' .$image_url. '">';
-					?>
+						?>
 					</a>
 				</div>
 			</div>
