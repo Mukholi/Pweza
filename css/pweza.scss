@@ -20,7 +20,7 @@ $cardBorderRadius : 25px;
         position: relative;
         width: 100%;
         height: 1cm;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.1);
     }
     .navigation-container{
         position: relative;
@@ -28,7 +28,75 @@ $cardBorderRadius : 25px;
         .navigation-desktop{
             position: relative;
             display: flex;
-            width: 100%;
+            padding-top: 20px;
+            width: 80%;
+            margin: 0 auto;
+            //background: green;
+            align-items: center;
+            .navigation-desktop-logo-container{
+                position: relative;
+                .navigation-desktop-logo-link{
+                    position: relative;
+                    display: block;
+                    .navigation-desktop-logo-image{
+                        position: relative;
+                        width: 3cm;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .navigation-desktop-left-container{
+                position: relative;
+                display: flex;
+                align-self: center;
+                width: 50%;
+                margin-top: -20px;
+                //background: purple;
+                ul{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: unset;
+                    margin: unset;
+                    //background: yellow;
+                    li{
+                        margin-right: 20px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+            .navigation-desktop-right-container{
+                position: relative;
+                display: flex;
+                align-self: center;
+                width: 50%;
+                margin-top: -20px;
+                //background: purple;
+                ul{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: unset;
+                    margin: unset;
+                    margin-left: auto;
+                    //background: yellow;
+
+                    li{
+                        margin-right: 20px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
         }
     }
 }

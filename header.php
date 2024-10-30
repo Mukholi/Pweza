@@ -40,8 +40,8 @@
 					?>
 				</div>
 				<div class="navigation-desktop-logo-container">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri().'/image/Pweza Full.png'; ?>">
+					<a href="#" class="navigation-desktop-logo-link">
+						<img class="navigation-desktop-logo-image" src="<?php echo get_template_directory_uri().'/image/Pweza Full.png'; ?>">
 					</a>
 				</div>
 				<div class="navigation-desktop-search-container"></div>
