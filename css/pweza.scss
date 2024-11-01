@@ -38,6 +38,7 @@ $cardBorderRadius : 25px;
                 .navigation-desktop-logo-link{
                     position: relative;
                     display: block;
+                    padding-top: 0px;
                     .navigation-desktop-logo-image{
                         position: relative;
                         width: 3cm;
@@ -61,12 +62,22 @@ $cardBorderRadius : 25px;
                     margin: unset;
                     //background: yellow;
                     li{
+                        position: relative;
+                        display: flex;
                         margin-right: 20px;
                         a{
                             text-decoration: none;
                             color: white;
                             font-size: 0.8em;
+                            font-weight: 500;
                         }
+                    }
+                    li::after{
+                        margin-top: -3px;
+                        margin-left: 3px;
+                        align-self: flex-end;
+                        content: url(../icon/chveron-down.svg);
+                        width: 8px;
                     }
                 }
             }
@@ -93,6 +104,8 @@ $cardBorderRadius : 25px;
                             text-decoration: none;
                             color: white;
                             font-size: 0.8em;
+                            font-weight: 500;
+
                         }
                     }
                 }
