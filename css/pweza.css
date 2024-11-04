@@ -191,7 +191,7 @@ body {
 }
 @media (min-width: 0px) {
   .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container .pweza-product-badge {
-    transform: scale(0.75) translate(-45%, 10%) rotate(-40deg);
+    transform: scale(0.75) translate(-45%, 20%) rotate(-40deg);
   }
 }
 @media (min-width: 526px) {
