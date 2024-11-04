@@ -138,13 +138,43 @@ body {
   border-radius: 25px;
   background: white;
 }
+@media (min-width: 0px) {
+  .pweza-product-container .pweza-product {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12.5px;
+  }
+}
+@media (min-width: 526px) {
+  .pweza-product-container .pweza-product {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+  }
+}
 .pweza-product-container .pweza-product .pweza-product-header-container {
   position: relative;
   width: 100%;
   height: 6cm;
   overflow: hidden;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+}
+@media (min-width: 0px) {
+  .pweza-product-container .pweza-product .pweza-product-header-container {
+    height: 3cm;
+    width: 5cm;
+    border-top-right-radius: 0;
+    border-top-left-radius: 12.5px;
+    border-bottom-left-radius: 12.5px;
+  }
+}
+@media (min-width: 526px) {
+  .pweza-product-container .pweza-product .pweza-product-header-container {
+    width: 100%;
+    height: 6cm;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0;
+  }
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-badge-container {
   position: absolute;
@@ -184,7 +214,6 @@ body {
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header {
   position: relative;
-  width: 100%;
   height: 100%;
 }
 .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header .pweza-product-header-link {
@@ -202,9 +231,31 @@ body {
   background: linear-gradient(180deg, rgb(0, 0, 0), #FFFFFF 100%);
   mix-blend-mode: screen;
 }
+@media (min-width: 0px) {
+  .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header .pweza-product-header-link .pweza-product-image-gradient {
+    display: none;
+  }
+}
+@media (min-width: 526px) {
+  .pweza-product-container .pweza-product .pweza-product-header-container .pweza-product-header .pweza-product-header-link .pweza-product-image-gradient {
+    display: block;
+  }
+}
 .pweza-product-container .pweza-product .pweza-product-body-container {
   position: relative;
   width: 100%;
+}
+@media (min-width: 0px) {
+  .pweza-product-container .pweza-product .pweza-product-body-container {
+    height: 3cm;
+    overflow: hidden;
+  }
+}
+@media (min-width: 526px) {
+  .pweza-product-container .pweza-product .pweza-product-body-container {
+    width: 100%;
+    height: 6cm;
+  }
 }
 .pweza-product-container .pweza-product .pweza-product-body-container .pweza-product-wishlist-container {
   position: absolute;
