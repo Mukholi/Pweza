@@ -199,6 +199,12 @@ $cardBorderRadius : 25px;
                     height: 30px;
                     background: red;
                     transform:translate(-38%,45%) rotate(-40deg);
+                    @media (min-width:0px){
+                        transform:scale(0.75) translate(-45%,10%) rotate(-40deg);
+                    }
+                    @media (min-width:526px){
+                        transform:translate(-38%,45%) rotate(-40deg);
+                    }
                     p{
                         position: absolute;
                         color: white;
@@ -263,22 +269,28 @@ $cardBorderRadius : 25px;
             width: 100%;
             @media (min-width:0px){
                 height: 3cm;
-                overflow: hidden;
             }
             @media (min-width:526px){
                 width: 100%;
-                height: 6cm;
+                height: unset;
             }
             .pweza-product-wishlist-container{
                 position: absolute;
                 align-items: center;
-                top: -5.7cm;
-                right: 10px;
+                z-index: 100;
                 width: 1cm;
                 height: 1cm;
                 border-radius: 100px;
                 overflow: hidden;
-                //background: white;
+                @media (min-width:0px){
+                    // background: yellow;
+                    top: 5px;
+                    right: 5px;
+                }
+                @media (min-width:526px){
+                    top: -5.8cm;
+                    right: 10px;
+                }
                 .pweza-product-wishlist{
                     position: relative;
                     margin-top: -2px;
@@ -307,6 +319,16 @@ $cardBorderRadius : 25px;
             }
             .pweza-product-body{
                 position: relative;
+                height: 100%;
+                @media (min-width:0px){
+                    display: flex;
+                    align-items: center;
+                }
+                @media (min-width:526px){
+                    height: unset;
+                    display: unset;
+                    padding-top: 20px;
+                }
                 .pweza-product-link{
                     position: relative;
                     display: block;
@@ -314,11 +336,29 @@ $cardBorderRadius : 25px;
                     outline: unset;
                     color: unset;
                     padding:0 25px;
-                    padding-top: 20px;
+                    // background: yellow;
+                    @media (min-width:0px){
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 8%;
+                        margin: auto;
+                        height: 100%;
+                    }
+                    @media (min-width:526px){
+                        height: unset;
+                        padding:0 25px;
+                        padding-top: 20px;
+                    }
                 }
                 .pweza-product-rating{
                     position: relative;
                     display: flex;
+                    @media (min-width:0px){
+                        margin-top: auto;
+                    }
+                    @media (min-width:526px){
+                        margin-top: unset;
+                    }
                     .pweza-product-rating-stars{
                         position: relative;
                         display: flex;
@@ -345,12 +385,26 @@ $cardBorderRadius : 25px;
                     margin: unset;
                     padding: unset;
                     color: black;
+                    @media (min-width:0px){
+                        font-weight: 800;
+                        font-size: 0.9em;
+                    }
+                    @media (min-width:526px){
+                        font-weight: 800;
+                        font-size: 1.1em;
+                    }
                 }
                 .pweza-product-prices{
                     position: relative;
                     display: flex;
                     flex-wrap: wrap;
                     margin-top: 2px;
+                    @media (min-width:0px){
+                        margin-bottom: auto;
+                    }
+                    @media (min-width:526px){
+                        margin-bottom: unset;
+                    }
                     p{
                         white-space: nowrap;
                         padding: unset;
@@ -373,6 +427,12 @@ $cardBorderRadius : 25px;
                     padding: 0 25px;
                     margin-top: 10px;
                     padding-bottom: 30px;
+                    @media (min-width:0px){
+                        display: none;
+                    }
+                    @media (min-width:526px){
+                        display: block;
+                    }
                     a{
                         display: block;
                         position: relative;
