@@ -191,13 +191,25 @@ if ( class_exists( 'WooCommerce' ) ) {
 function register_custom_menu() {
     register_nav_menus(
         array(
-            'header-menu-left' => __( 'Header Menu Left' )
+            'header-menu-left' => __( 'Menu Left (Header)' )
 		),
     );
     register_nav_menus(
         array(
-            'header-menu-right' => __( 'Header Menu Right' )
+            'header-menu-right' => __( 'Menu Right (Header)' )
 		),
     );
 }
 add_action( 'init', 'register_custom_menu' );
+
+//Custom Footer
+function register_footer_menus() {
+    register_nav_menus( array(
+        'footer-about' => __( 'About (Footer)', 'Pweza' ),
+        'footer-account' => __( 'Account (Footer)', 'Pweza' ),
+		'footer-support' => __( 'Support (Footer)', 'Pweza' ),
+		'footer-newsletter' => __( 'News Letter (Footer)', 'Pweza' ),
+		'footer-terms&conditions' => __( 'Terms & Conditions (Footer)', 'Pweza' ),
+    ));
+}
+add_action( 'init', 'register_footer_menus' );

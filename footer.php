@@ -12,18 +12,23 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="footer-top-conainer">
+			<div class="footer-top">
+				<div class="footer-top-left">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-about',
+						'menu_class'     => 'footer-menu', // Add your own class for styling
+						'container'      => 'menu',               // Container element, e.g., 'div', 'nav'
+						'container_class'=> 'footer-container', // Class for the container
+					) );
+					?>
+				</div>
+				<div class="footer-top-right"></div>
+			</div>
+		</div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pweza' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'pweza' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pweza' ), 'pweza', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+			<p>Footer</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
