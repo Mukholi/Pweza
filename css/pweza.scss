@@ -495,3 +495,119 @@ $cardBorderRadius : 25px;
         }
     }
 }
+
+//FOOTER
+.site-footer{
+    position: relative;
+    width: 100%;
+    background-color: $colorPrimary;
+    padding-top: 2cm;
+    padding-bottom: 3cm;
+    margin-bottom: -1cm;
+    .footer-top-conainer{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        .footer-top{
+            position: relative;
+            display: flex;
+            width: 100%;
+            .footer-top-left{
+                position: relative;
+                display: flex;
+                width: 60%;
+                .footer-item-header{
+                    font-size: 1.5em;
+                    font-weight: 900;
+                    color: white;
+                    margin-top: 0;
+                }
+                .footer-item{
+                    position: relative;
+                    width: 33%;
+                    ul{
+                        position: relative;
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        margin-top: -0.5cm;
+                        li{
+                            position: relative;
+                            a{
+                                font-size: 0.8em;
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-top-right{
+                position: relative;
+                width: 40%;
+                .footer-top-search{
+                    position: relative;
+                    .search-form{
+                        position: relative;
+                        display: flex;
+                        label{
+                            position: relative;
+                            width: 80%;
+                            // padding-left: 10px;
+                            .screen-reader-text{
+                                display: none;
+                            }
+                            .search-field{
+                                width: 98%;
+                                height: 1cm;
+                                background: none;
+                                padding-left: 10px;
+                                border: 2px solid white;
+                                color: white;
+                                outline: none;
+                            }
+                        }
+                        input{
+                            background: white;
+                            color: $colorPrimary;
+                            position: relative;
+                            width: 80px;
+                            font-size: 0.8em;
+                            cursor: pointer;
+                            border: 0;
+                        }
+                        input::placeholder {
+                            color: white;
+                        }
+                        
+                    }
+                }
+                .footer-top-links{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    padding-top: 10px;
+                    .footer-top-link-image{
+                        align-self: flex-start;
+                        margin-right: 10px;
+                        margin-top: 3px;
+                        width: 50px;
+                        object-fit: scale-down;
+                    }
+                    .footer-top-link-text{
+                        margin: 0;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 0.7em;
+                        a{
+                            text-decoration: none;
+                            color: unset;
+                            padding-bottom: 2px;
+                            border-bottom: 1px dotted white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
