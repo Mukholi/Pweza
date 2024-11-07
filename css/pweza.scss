@@ -502,7 +502,6 @@ $cardBorderRadius : 25px;
     width: 100%;
     background-color: $colorPrimary;
     padding-top: 2cm;
-    padding-bottom: 3cm;
     margin-bottom: -1cm;
     .footer-top-conainer{
         position: relative;
@@ -607,6 +606,21 @@ $cardBorderRadius : 25px;
                         }
                     }
                 }
+            }
+        }
+    }
+    .site-info{
+        position: relative;
+        padding-bottom: 2cm;
+        .site-info-copyright{
+            position: relative;
+            margin-top: 2cm;
+            padding-top: .5cm;
+            border-top: 1px solid white;
+            .site-info-copyright-text{
+                text-align: center;
+                color: white;
+                font-size: 0.7em;
             }
         }
     }

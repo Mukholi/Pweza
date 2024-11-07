@@ -86,14 +86,16 @@
 						}
 						?>
 						<img class="footer-top-link-image" src="<?php echo get_template_directory_uri().'/image/Pweza.png' ?>">
-						<p class="footer-top-link-text">signup for our <?php echo $first_last_link; ?> or view the <?php echo $second_last_link; ?>.</p>
+						<p class="footer-top-link-text">signup for our <?php echo $first_last_link; ?> or view our <?php echo $second_last_link; ?>.</p>
 
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="site-info">
-			<p>site info</p>
+			<div class="site-info-copyright">
+				<p class="site-info-copyright-text">&copy;<?php echo date('Y');?> Pweza. All Rights Reserved.</p>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

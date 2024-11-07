@@ -514,7 +514,6 @@ body {
   width: 100%;
   background-color: #FF6D1F;
   padding-top: 2cm;
-  padding-bottom: 3cm;
   margin-bottom: -1cm;
 }
 .site-footer .footer-top-conainer {
@@ -624,4 +623,19 @@ body {
   color: unset;
   padding-bottom: 2px;
   border-bottom: 1px dotted white;
+}
+.site-footer .site-info {
+  position: relative;
+  padding-bottom: 2cm;
+}
+.site-footer .site-info .site-info-copyright {
+  position: relative;
+  margin-top: 2cm;
+  padding-top: 0.5cm;
+  border-top: 1px solid white;
+}
+.site-footer .site-info .site-info-copyright .site-info-copyright-text {
+  text-align: center;
+  color: white;
+  font-size: 0.7em;
 }/*# sourceMappingURL=pweza.css.map */
