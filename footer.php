@@ -94,7 +94,7 @@
 		</div>
 		<div class="site-info">
 			<div class="site-info-copyright">
-				<p class="site-info-copyright-text">&copy;<?php echo date('Y');?> Pweza. All Rights Reserved.</p>
+				<p class="site-info-copyright-text">&copy;<?php echo date('Y');?> Pweza.</p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
