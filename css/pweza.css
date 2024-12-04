@@ -541,6 +541,10 @@ body {
   position: relative;
   width: 33%;
 }
+.site-footer .footer-top-conainer .footer-top .footer-top-left .footer-item .footer-menu {
+  margin: unset;
+  padding: unset;
+}
 .site-footer .footer-top-conainer .footer-top .footer-top-left .footer-item ul {
   position: relative;
   padding: 0;

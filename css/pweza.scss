@@ -524,6 +524,10 @@ $cardBorderRadius : 25px;
                 .footer-item{
                     position: relative;
                     width: 33%;
+                    .footer-menu{
+                        margin: unset;
+                        padding: unset;
+                    }
                     ul{
                         position: relative;
                         padding: 0;
